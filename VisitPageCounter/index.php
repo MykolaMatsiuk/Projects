@@ -33,7 +33,7 @@ function readStat() {
 
 function writeToFile($arr, $fileName) {
   if (!$arr && file_exists($fileName)) {
-    return unlink(FILE);
+    return unlink($fileName);
   }
 
   if ($arr) {
